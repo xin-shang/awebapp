@@ -1,6 +1,8 @@
 import './App.css';
 import Card from './components/Card';
+import CardList from './components/CardList';
 import CardV2 from './components/CardV2';
+import CardV3 from './components/CardV3';
 
 function App() {
   return (
@@ -9,20 +11,7 @@ function App() {
               <h2 className="text-center">Example Application</h2>
           </div>
           <div className="row justify-content-center">
-              <Card
-                  itemId='1'
-                  itemName='text record1'
-                  itemDescription='text record 1 Desc'
-                  itemImage='https://upload.wikimedia.org/wikipedia/commons/0/04/So_happy_smiling_cat.jpg'
-                  itemCost="15.00"
-              />
-              <CardV2
-                  itemId='2'
-                  itemName='text record2'
-                  itemDescription='text record 2 Desc'
-                  itemImage='https://upload.wikimedia.org/wikipedia/commons/0/04/So_happy_smiling_cat.jpg'
-                  itemCost="10.00"
-              />
+              <CardList />
           </div>
     </div>
   );

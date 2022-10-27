@@ -1,6 +1,6 @@
 // JavaScript source code
 
-function CardV2(itemId, itemName, itemDescription, itemImage, itemCost) {
+function CardV2({ itemId, itemName, itemDescription, itemImage, itemCost }) {
     return (
         <div className="card col-4 md-2" style={{ width: 18 + 'rem' }}>
             <img className="card-img-top" src={itemImage} alt={"Image of " + itemName} />
